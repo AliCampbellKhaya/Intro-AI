@@ -1,6 +1,6 @@
 # Introduction to Artficial Intelligence
 
-In this course I completed 4 major AI projects \
+In this course I completed - major AI projects: A simple reflex agent, 
 
 ## Simple Reflex Agent and Vacuum Environment
 ### Vacuum Environment

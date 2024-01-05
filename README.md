@@ -1,6 +1,6 @@
 # Introduction to Artficial Intelligence
 
-In this course I completed 5 major AI projects: \
+In this course I completed 5 major AI projects:
 * I wrote an a simple reflex agent and an environment for it to complete
 * I desgined a traveling sales person problem envrionment and produced a hill climbing and genetic algorithm to solve the puzzle
 * I constructed a k-means clustering algorithm from scratch
@@ -8,6 +8,8 @@ In this course I completed 5 major AI projects: \
 * I wrote a naive bayes classification algorithm for a spam filter and compared it to the sci-kit learn implementation
 
 ## Simple Reflex Agent and Vacuum Environment
+All code for this project is in the python notebook "Vacuum_Reflex_Agent"
+
 ### Vacuum Environment
 There are two locations or boxes an agent can be in, each box either has the status "dirty" or "clean"
 

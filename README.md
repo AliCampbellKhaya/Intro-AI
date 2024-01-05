@@ -43,6 +43,44 @@ Unfortunately, the steepest ascent hill climbing algorithm got stuck in a local 
 ![Screenshot](GeneticResults.png) \
 Again, the output is the path the genetic algorithm took to solve the TSP and the performance cost. The performance of the genetic algorithm was much better than the hill climbing method as the genetic algorithm is more robust and less likely to get stuck in a local maxima than the hill climbing algorithm, so it found a far more optimal solution.
 
+## K Means Clustering
+All code for this project is in the python notebook [yada](yada.ipynb)
+
+### Clustering Dataset
+The dataset is located in the csv file [yada](yada.csv)
+yada yada
+
+### K Means Algorithm
+yada yada
+
+### Results
+yada yada
+
+## Logistic Regression
+All code for this project is in the python notebook [yada](yada.ipynb)
+
+### Regression Dataset
+The dataset is located in the arff file [yada](yada.arff)
+yada yada
+
+### Logistic Regression Algorithm
+yada yada
+
+### Results
+yada yada
+
+## Naive Bayes
+All code for this project is in the python notebook [yada](yada.ipynb)
+
+### Spam Dataset
+The datasets for this project are located in the csv files [yada](yada.csv) and [yada](yada.csv)
+
+### Naive Bayes Algorithm
+yada yada
+
+### Results
+yada yada
+
 ## Credit
 Some of the projects completed here were inspired by the assignments in the textbook Articial Intelligence a Modern Approach by Stuart J Russell. \
 Russell, Stuart J. (Stuart Jonathan), 1962-. Artificial Intelligence : a Modern Approach. Upper Saddle River, N.J. :Prentice Hall, 2010.

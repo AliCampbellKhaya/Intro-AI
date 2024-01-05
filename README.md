@@ -1,6 +1,11 @@
 # Introduction to Artficial Intelligence
 
-In this course I completed - major AI projects: A simple reflex agent, 
+In this course I completed 5 major AI projects: \
+* I wrote an a simple reflex agent and an environment for it to complete
+* I desgined a traveling sales person problem envrionment and produced a hill climbing and genetic algorithm to solve the puzzle
+* I constructed a k-means clustering algorithm from scratch
+* I built from scratch a logistic regression algorithm and implemented both the regularization and standardization methods
+* I wrote a naive bayes classification algorithm for a spam filter and compared it to the sci-kit learn implementation
 
 ## Simple Reflex Agent and Vacuum Environment
 ### Vacuum Environment

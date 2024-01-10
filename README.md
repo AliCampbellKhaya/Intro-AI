@@ -59,7 +59,7 @@ The clusters will vary between iterations as this is a general property of K Mea
 Clusters for K = 2: \
 ![Screenshot](KMeans2Clusters.png) \
 Clusters for K = 5: \
-![Screenshot](Kmeans5Clusters.png)
+![Screenshot](KMeans5Clusters.png)
 
 ## Logistic Regression
 All code for this project is in the python notebook [LogisticRegression](LogisticRegression.ipynb)

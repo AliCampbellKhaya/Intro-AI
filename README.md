@@ -44,42 +44,56 @@ Unfortunately, the steepest ascent hill climbing algorithm got stuck in a local 
 Again, the output is the path the genetic algorithm took to solve the TSP and the performance cost. The performance of the genetic algorithm was much better than the hill climbing method as the genetic algorithm is more robust and less likely to get stuck in a local maxima than the hill climbing algorithm, so it found a far more optimal solution.
 
 ## K Means Clustering
-All code for this project is in the python notebook [yada](yada.ipynb)
+All code for this project is in the python notebook [KMeans](KMeans.ipynb)
 
 ### Clustering Dataset
-The dataset is located in the csv file [yada](yada.csv)
-yada yada
+The dataset is located in the txt file [cluster_data](cluster_data.txt) \
+The txt file is a collection of coordinate points that when graphed form two diamonds. A picture of the unclustered dataset is included below. \
+![Screenshot](ClusterData.png)
 
 ### K Means Algorithm
-yada yada
+The kmeans algorithm takes a dataset and a number of clusters in addition to a tolerance and max iterations values that have default values. The algorithm will then cluster the dataset accordingly and return both the clustered dataset and the centroid positions for each cluster. The algorithm works by randomly assigning K number of centroids, then categorizing every datapoint to the closest centroid. The centroid is then updated to the mean value of the cluster. This process is repeated until there is a negligible change in the centroids positions. For further details on the K Means algorithm refer to the included python notebook.
 
 ### Results
-yada yada
+The clusters will vary between iterations as this is a general property of K Means algorithms. \
+Clusters for K = 2: \
+![Screenshot](KMeans2Clusters.png) \
+Clusters for K = 5: \
+![Screenshot](Kmeans5Clusters.png)
 
 ## Logistic Regression
-All code for this project is in the python notebook [yada](yada.ipynb)
+All code for this project is in the python notebook [LogisticRegression](LogisticRegression.ipynb)
 
 ### Regression Dataset
-The dataset is located in the arff file [yada](yada.arff)
-yada yada
+The dataset is located in the arff file [ckd_data](ckd_data_updated/chronic_kidney_disease_full.arff) \
+This dataset contains a collection of values and observations collected by doctors and whether or not the patient had kidney disease. This dataset is used to predict if a patient has kidney disease. \
+The dataset required cleaning to be used in a logistic regression problem as the initial dataset included both qualitative data and NaN values. To clean the data I mapped all string and qualitative values to numeric and quantative values and replaced any NaN values with the median value of that column. For more details on the cleaning process refer to the python notebook.
 
 ### Logistic Regression Algorithm
-yada yada
+For the logistic regression algorithm I wrote a Sigmoid, Cost and Gradient Descent method to train the algorithm with. The standard equation for logistic regression updates were used for the cost function and the sigmoid function. I then wrote a prediction method that will allow the trained algorithm to make predictions to evaluate its performance. I then wrote a F1 Score algorithm to score the accuracy of my model. I then wrote a standardization method and tested the algorithm both with and without standardization For further details refer to the logistic regression notebook.
 
 ### Results
-yada yada
+I tested the logistic regression algorithm on both the training and testing datasets with a range of regularization parameters from -2 to 4 with a step inbetween of 0.2. For the logistic regression without standardization there was a large variety in the algorithms performance when the regularization parameter was changed with a best F1 Score of 0.75 for regularization parameter of -1.4 and a worst F1 Score of 0.12 for a regulariation parameter of 2.6. \
+![Screenshot](FMeasureRegularization.png) \
+For the logistic regression with standardization the best F1 Score was 0.64 for a regularization parameter of 0.2 and the worst F1 Score was 0.33 for a regularization parameter of 4. \
+![Screenshot](FMeasureRegularizationStandardization.png) \
+Using standardization leads to more stable results, however the stability reduces both the top end accuracy while increasing the bottom end accuracy. This means the model with standardization is more likely to be accurate, however in perfect conditions it does not have the same peak performance as the algorithm without standardization.
 
 ## Naive Bayes
-All code for this project is in the python notebook [yada](yada.ipynb)
+All code for this project is in the python notebook [NaiveBayes](NaiveBayes.ipynb)
 
 ### Spam Dataset
-The datasets for this project are located in the csv files [yada](yada.csv) and [yada](yada.csv)
+The datasets for this project are located in the csv files [email bodies](emails/dbworld_bodies_stemmed.csv) and [email subjects](emails/dbworld_subjects_stemmed.csv)
+The datasets contain a library of word counts for the subejcts and the bodies of emails and whether or not the email was classified as spam. This dataset can be used to create a naive bayes spam filter.
 
 ### Naive Bayes Algorithm
-yada yada
+The naive bayes algorithm uses Bayes Theorem to calculate the probability that a datapoint belongs to a class and then classifies it accordingly. My implementation of a naive bayes algorithm includes laplacian smoothing to prevent overfitting with a k value provided by the user. I also implemented an F1 Score algorithm to test the results of the Naive Bayes classifier. 
 
 ### Results
-yada yada
+My Naive Bayes algorithm had an F1 score of 0.82 for the bodies and an F1 score of 0.95 for the subjects. Therefore the subjects would be the better dataset to use for a Naive Bayes algorithm because the higher F1 score for subjects means the classifier would be accurate more often. \
+The sklearn algorithm had an F1 score of 0.875 for the subjects and an F1 score of 0.95 for the subjects. Therefore the subjects dataset is again the better dataset to use for a Naive Bayes algorithm because it has had the higher F1 score for both implementations. \
+The sklearn Naive Bayes classifier performed better than mine on the bodies dataset but had the same performance as my model on the subjects dataset. This likely means my implementation of the Naive Bayes algorithm was robust because it performs marginally worse than the very well implemented sklearn algorithm.
+
 
 ## Credit
 Some of the projects completed here were inspired by the assignments in the textbook Articial Intelligence a Modern Approach by Stuart J Russell. \

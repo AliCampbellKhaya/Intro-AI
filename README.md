@@ -1,7 +1,7 @@
 # Introduction to Artficial Intelligence
 
 In this course I completed 5 major AI projects:
-* I wrote an a simple reflex agent and an environment for it to complete
+* I wrote an a simple reflex agent and an environment for it to complete [GoTo](#Simple-Reflex-Agent-and-Vacuum-Environment)
 * I desgined a traveling sales person problem envrionment and produced a hill climbing and genetic algorithm to solve the puzzle
 * I constructed a k-means clustering algorithm from scratch
 * I built from scratch a logistic regression algorithm and implemented both the regularization and standardization methods

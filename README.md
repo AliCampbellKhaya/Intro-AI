@@ -97,4 +97,5 @@ The sklearn Naive Bayes classifier performed better than mine on the bodies data
 
 ## Credit
 Some of the projects completed here were inspired by the assignments in the textbook Articial Intelligence a Modern Approach by Stuart J Russell. \
-Russell, Stuart J. (Stuart Jonathan), 1962-. Artificial Intelligence : a Modern Approach. Upper Saddle River, N.J. :Prentice Hall, 2010.
+Russell, Stuart J. (Stuart Jonathan), 1962-. Artificial Intelligence : a Modern Approach. Upper Saddle River, N.J. :Prentice Hall, 2010. \
+All completed project work and solutions are the intellectual property of myself, Alasdair Campbell.
